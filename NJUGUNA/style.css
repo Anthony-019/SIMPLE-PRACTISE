@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: blueviolet;
+}
+.container{
+    width: 350px;
+    height: 420px;
+    background-color: aqua;
+    border-radius: 15px;
+
+}
+button{
+    padding: 20px;
+    background-color: yellow;
+    border-radius: 24px;
+}
+.container:hover{
+    background-color: red;
+}
+h2{
+    position: relative;
+    margin: 20px 0 0;
+    font-size: 4em;
+    color: rgb(38, 84, 235);
+    z-index: 1;
+    overflow: hidden;
+    background-color: black;
+}
+h2:before{
+    content: '';
+    position: absolute;
+    left: 120%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 0%, greenyellow 5%, aqua 100%);
+    animation: animate 5.5s linear forwards;
+    animation-delay: 2%;
+}
+@keyframes animate{
+    0%
+{
+    left:110%
+}
+100%
+{
+    left: -20%;
+}}
+h2 span{
+    color: red;
+}
+h1:hover{
+    color: rgb(19, 219, 52);
+}

@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: greenyellow;
+    font-weight: bold;
+    background-image: url(Images/~Prayer\ Partner.jpg);
+}
+.container{
+    background-color: orange;
+    width: 300px;
+    height: 380px;
+    padding: 30px;
+    padding-top: 15px;
+    padding-left: 35px;
+   border-radius: 25px;
+}
+h1{
+    color: purple;
+}
+button{
+    padding: 15px;
+    border-radius: 17px;
+    border: none;
+    background-color: aqua;
+    color: rgb(6, 75, 0);
+}
+input{
+    height: 4vh;
+    border-radius: 5px;
+    border: none;
+}
+.container:hover{
+    background-color: aquamarine;
+    color: rgb(128, 0, 100);
+}
+.copy{
+    background-color: #ff022c;
+    color: black;
+}
+h2{
+    position: relative;
+    margin: 20px 0 0;
+    font-size: 4em;
+    color: rgb(38, 84, 235);
+    z-index: 1;
+    overflow: hidden;
+    background-color: black;
+}
+h2:before{
+    content: '';
+    position: absolute;
+    left: 120%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 0%, greenyellow 5%, aqua 100%);
+    animation: animate 5.5s linear forwards;
+    animation-delay: 2%;
+}
+@keyframes animate{
+    0%
+{
+    left:110%
+}
+100%
+{
+    left: -20%;
+}}
+h2 span{
+    color: red;
+}
